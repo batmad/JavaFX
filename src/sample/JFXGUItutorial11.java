@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 /**
  * Created by tm on 10.08.2015.
  */
-public class JFXGUItutorial extends Application{
+public class JFXGUItutorial11 extends Application{
     Stage window;
 
     public static void main(String[] args) {
