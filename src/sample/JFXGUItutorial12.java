@@ -27,9 +27,11 @@ public class JFXGUItutorial12 extends Application {
         ChoiceBox<String> choiceBox = new ChoiceBox<>();
         choiceBox.getItems().addAll("Рыба", "Курица", "Мясо", "Свинина", "Кока-кола");
         choiceBox.setValue("Мясо");
+        choiceBox.getSelectionModel().selectedItemProperty().addListener( (v, oldValue, newValue) -> System.out.println(newValue));
 
         Button btn = new Button("Заказать");
         btn.setOnAction(e -> getChoice(choiceBox));
+
 
         VBox layout = new VBox(20);
         layout.setPadding(new Insets(10, 10, 10, 10));
